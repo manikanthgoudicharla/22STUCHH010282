@@ -10,7 +10,7 @@ function verifyToken(req, res, next) {
     return res.status(401).json({ error: 'Invalid token' });
   }
 
-  // Optional: validate token structure or expiry
+
   next();
 }
 
